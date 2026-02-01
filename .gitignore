@@ -1,0 +1,40 @@
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+
+# Obsidian cache (keep your notes, ignore cache/state)
+.obsidian/cache/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/plugins/**/data.json
+
+# ---- Sensitive files that sometimes end up in workspace ----
+# (If you actually want to version one of these, delete the line intentionally.)
+**/*service-account*.json
+**/*google-service-account*.json
+**/*.pem
+**/*.key
+**/*oauth*.json
+**/*token*.json
+**/*secrets*.json
+.env
+.env.*
+
+# ---- Generated / scratch ----
+tmp/
+TEMP_*.md
+*.zip
+*.log
+
+# ---- Keep the vault lean (optional) ----
+# If you want this repo to be "markdown only", ignore images + code by default.
+# Comment these out if you decide you want to version them.
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.py
